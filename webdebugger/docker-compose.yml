@@ -1,0 +1,12 @@
+---
+version: "2"
+services:
+  webdebugger:
+    build: .
+    volumes:
+      - "./:/app"
+    ports:
+      - "8000:8080"
+    environment:
+      APP_DELAY: 1
+      APP_BGCOLOR: white

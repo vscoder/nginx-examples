@@ -1,0 +1,39 @@
+---
+version: "2"
+services:
+  webdebugger-white:
+    build: .
+    volumes:
+      - "./:/app"
+    ports:
+      - "8080:8080"
+    environment:
+      APP_DELAY: 1
+      APP_BGCOLOR: white
+  webdebugger-red:
+    build: .
+    volumes:
+      - "./:/app"
+    ports:
+      - "8081:8080"
+    environment:
+      APP_DELAY: 1
+      APP_BGCOLOR: red
+  webdebugger-green:
+    build: .
+    volumes:
+      - "./:/app"
+    ports:
+      - "8082:8080"
+    environment:
+      APP_DELAY: 1
+      APP_BGCOLOR: green
+  webdebugger-blue:
+    build: .
+    volumes:
+      - "./:/app"
+    ports:
+      - "8083:8080"
+    environment:
+      APP_DELAY: 1
+      APP_BGCOLOR: blue
